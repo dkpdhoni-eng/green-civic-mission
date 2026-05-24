@@ -1,0 +1,195 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4fff4;
+}
+
+/* NAVBAR */
+
+nav{
+    background:green;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav li{
+    cursor:pointer;
+}
+
+/* HERO SECTION */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');
+    background-size:cover;
+    color:white;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* BUTTON */
+
+button{
+    background:limegreen;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:green;
+}
+
+/* SECTIONS */
+
+section{
+    margin:40px;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+/* FOOTER */
+
+footer{
+    background:green;
+    color:white;
+    text-align:center;
+    padding:20px;
+}/* GALLERY */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+
+
+/* FORM */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    padding:15px;
+    border-radius:10px;
+    border:1px solid gray;
+    font-size:16px;
+}
+
+textarea{
+    height:120px;
+}/* DARK MODE */
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark nav{
+    background:black;
+}
+
+.dark footer{
+    background:black;
+}
+
+/* DARK BUTTON */
+
+#darkBtn{
+    margin-left:15px;
+    background:black;
+}
+
+/* COUNTER */
+
+#counter{
+    font-size:70px;
+    color:green;
+}/* FOUNDER MESSAGE */
+
+.founder{
+    background:#e8ffe8;
+    padding:40px;
+    margin:40px;
+    border-radius:20px;
+    box-shadow:0px 0px 15px lightgray;
+}
+
+.founder h2{
+    text-align:center;
+    color:green;
+    margin-bottom:30px;
+}
+
+.founder p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}.founder h3{
+    text-align:right;
+    margin-top:30px;
+    color:darkgreen;
+}/* DONATION SECTION */
+
+.donation{
+    text-align:center;
+    background:#e8ffe8;
+    padding:40px;
+    margin:40px;
+    border-radius:20px;
+}
+
+.donation img{
+    width:250px;
+    margin-top:20px;
+    border-radius:15px;
+}
+
+.donation h2{
+    color:green;
+}
