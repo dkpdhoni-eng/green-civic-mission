@@ -4,252 +4,318 @@
 
 <head>
 
-    <title>Green Civic Mission Certificate</title>
+<title>Green Civic Mission Certificate</title>
 
-    <style>
+<style>
 
-        body{
-            margin:0;
-            padding:40px;
-            background:#eaf7ea;
-            font-family:Georgia, serif;
-        }
+body{
 
-        .certificate{
+    margin:0;
+    padding:40px;
+    background:linear-gradient(135deg,#dff5df,#eefbea);
+    font-family:Georgia, serif;
 
-            position:relative;
-            max-width:1200px;
-            margin:auto;
-            background:white;
-            padding:60px;
-            border:12px solid #b8860b;
-            overflow:hidden;
-            box-shadow:0px 0px 25px rgba(0,0,0,0.3);
+}
 
-        }
+.certificate{
 
-        /* BACKGROUND IMAGES */
+    position:relative;
+    max-width:1300px;
+    margin:auto;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(5px);
 
-        .bg-tree{
+    border:14px solid #caa520;
+    border-radius:25px;
 
-            position:absolute;
-            left:0;
-            bottom:0;
-            width:320px;
-            opacity:0.12;
+    padding:70px;
 
-        }
+    overflow:hidden;
 
-        .bg-earth{
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.25),
+    inset 0 0 40px rgba(255,215,0,0.15);
 
-            position:absolute;
-            right:20px;
-            top:220px;
-            width:300px;
-            opacity:0.12;
+}
 
-        }
+/* GOLD LINES */
 
-        /* CORNER DESIGN */
+.certificate::before{
 
-        .corner-top-left{
+    content:"";
 
-            position:absolute;
-            top:0;
-            left:0;
-            width:250px;
-            height:250px;
-            background:linear-gradient(135deg,#006400,#32cd32);
-            border-bottom-right-radius:100%;
+    position:absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    bottom:20px;
 
-        }
+    border:2px solid rgba(202,165,32,0.5);
 
-        .corner-bottom-right{
+    border-radius:18px;
 
-            position:absolute;
-            bottom:0;
-            right:0;
-            width:250px;
-            height:250px;
-            background:linear-gradient(135deg,#32cd32,#006400);
-            border-top-left-radius:100%;
+}
 
-        }
+/* BACKGROUND IMAGES */
 
-        /* LOGO */
+.planting{
 
-        .logo{
+    position:absolute;
+    left:-20px;
+    bottom:0;
 
-            width:120px;
-            display:block;
-            margin:auto;
-            position:relative;
-            z-index:2;
+    width:420px;
 
-        }
+    opacity:0.15;
 
-        /* TITLE */
+}
 
-        .org-name{
+.earth{
 
-            text-align:center;
-            font-size:52px;
-            color:#0b5d1e;
-            font-weight:bold;
-            margin-top:15px;
-            position:relative;
-            z-index:2;
+    position:absolute;
+    right:20px;
+    top:220px;
 
-        }
+    width:320px;
 
-        .tagline{
+    opacity:0.12;
 
-            text-align:center;
-            font-size:18px;
-            letter-spacing:2px;
-            color:#444;
-            margin-bottom:30px;
-            position:relative;
-            z-index:2;
+}
 
-        }
+/* HEADER */
 
-        .certificate-title{
+.logo{
 
-            text-align:center;
-            font-size:95px;
-            color:#0b5d1e;
-            font-weight:bold;
-            letter-spacing:5px;
-            margin-top:10px;
-            position:relative;
-            z-index:2;
+    width:130px;
+    display:block;
+    margin:auto;
+    position:relative;
+    z-index:2;
 
-        }
+}
 
-        .sub-title{
+.org{
 
-            text-align:center;
-            font-size:38px;
-            color:#b8860b;
-            letter-spacing:8px;
-            margin-top:-20px;
-            position:relative;
-            z-index:2;
+    text-align:center;
+    color:#0b5d1e;
 
-        }
+    font-size:56px;
+    font-weight:bold;
 
-        /* CONTENT */
+    margin-top:10px;
 
-        .content{
+    letter-spacing:2px;
 
-            text-align:center;
-            margin-top:50px;
-            position:relative;
-            z-index:2;
+    position:relative;
+    z-index:2;
 
-        }
+}
 
-        .content p{
+.tagline{
 
-            font-size:28px;
-            color:#333;
-            line-height:1.8;
+    text-align:center;
+    font-size:18px;
 
-        }
+    color:#444;
 
-        /* VOLUNTEER NAME */
+    letter-spacing:3px;
 
-        #volunteerName{
+    margin-top:10px;
 
-            font-size:90px;
-            color:#0b5d1e;
-            font-family:cursive;
-            margin:30px 0;
-            border-bottom:3px solid #caa520;
-            display:inline-block;
-            padding-bottom:10px;
+    position:relative;
+    z-index:2;
 
-        }
+}
 
-        /* MOTTO */
+/* TITLE */
 
-        .motto{
+.title{
 
-            text-align:center;
-            margin-top:40px;
-            font-size:30px;
-            color:#0b5d1e;
-            letter-spacing:3px;
-            font-weight:bold;
-            position:relative;
-            z-index:2;
+    text-align:center;
 
-        }
+    font-size:110px;
 
-        /* BADGE */
+    color:#0a4f19;
 
-        .badge{
+    margin-top:40px;
 
-            width:180px;
-            display:block;
-            margin:40px auto;
-            position:relative;
-            z-index:2;
+    font-weight:bold;
 
-        }
+    letter-spacing:8px;
 
-        /* FOOTER */
+    text-shadow:3px 3px 10px rgba(0,0,0,0.1);
 
-        .footer{
+    position:relative;
+    z-index:2;
 
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            margin-top:50px;
-            position:relative;
-            z-index:2;
+}
 
-        }
+.subtitle{
 
-        .date{
+    text-align:center;
 
-            text-align:center;
-            font-size:24px;
+    font-size:40px;
 
-        }
+    color:#caa520;
 
-        .signature{
+    letter-spacing:10px;
 
-            text-align:center;
+    margin-top:-25px;
 
-        }
+    position:relative;
+    z-index:2;
 
-        .signature h2{
+}
 
-            font-family:cursive;
-            font-size:45px;
-            margin:0;
-            color:#111;
+/* CONTENT */
 
-        }
+.content{
 
-        .signature p{
+    text-align:center;
 
-            font-size:22px;
-            color:#333;
+    margin-top:50px;
 
-        }
+    position:relative;
+    z-index:2;
 
-        /* QR */
+}
 
-        .qr{
+.content p{
 
-            width:120px;
+    font-size:30px;
 
-        }
+    color:#333;
 
-    </style>
+    line-height:1.8;
+
+}
+
+/* NAME */
+
+#volunteerName{
+
+    font-size:95px;
+
+    color:#0b5d1e;
+
+    font-family:cursive;
+
+    margin:40px 0;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,0.15);
+
+    border-bottom:3px solid #caa520;
+
+    display:inline-block;
+
+    padding:0 40px 15px;
+
+}
+
+/* MOTTO */
+
+.motto{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    color:#0b5d1e;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+    position:relative;
+    z-index:2;
+
+}
+
+/* BADGE */
+
+.badge{
+
+    width:190px;
+
+    display:block;
+
+    margin:45px auto;
+
+    position:relative;
+    z-index:2;
+
+    filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:60px;
+
+    position:relative;
+    z-index:2;
+
+}
+
+.date{
+
+    text-align:center;
+
+    font-size:24px;
+
+    color:#333;
+
+}
+
+.signature{
+
+    text-align:center;
+
+}
+
+.signature h2{
+
+    font-size:48px;
+
+    font-family:cursive;
+
+    margin:0;
+
+    color:#111;
+
+}
+
+.signature p{
+
+    font-size:24px;
+
+    color:#333;
+
+}
+
+/* QR */
+
+.qr{
+
+    width:120px;
+
+    border:5px solid white;
+
+    box-shadow:0px 0px 12px rgba(0,0,0,0.15);
+
+}
+
+</style>
 
 </head>
 
@@ -257,106 +323,92 @@
 
 <div class="certificate">
 
-    <!-- DESIGNS -->
+<img src="planting.jpeg.jpeg" class="planting">
 
-    <div class="corner-top-left"></div>
+<img src="earth.jpeg.jpeg" class="earth">
 
-    <div class="corner-bottom-right"></div>
+<img src="logo.png.png" class="logo">
 
-    <!-- BACKGROUND -->
+<div class="org">
+GREEN CIVIC MISSION
+</div>
 
-    <img src="planting.jpeg.jpeg" class="bg-tree">
+<div class="tagline">
+TOGETHER FOR A CLEANER & GREENER TOMORROW
+</div>
 
-    <img src="earth.jpeg.jpeg" class="bg-earth">
+<div class="title">
+CERTIFICATE
+</div>
 
-    <!-- LOGO -->
+<div class="subtitle">
+OF APPRECIATION
+</div>
 
-    <img src="logo.png.png" class="logo">
+<div class="content">
 
-    <div class="org-name">
-        GREEN CIVIC MISSION
-    </div>
+<p>
+This certificate is proudly presented to
+</p>
 
-    <div class="tagline">
-        TOGETHER FOR A CLEANER & GREENER TOMORROW
-    </div>
+<div id="volunteerName">
+Volunteer Name
+</div>
 
-    <div class="certificate-title">
-        CERTIFICATE
-    </div>
+<p>
+for outstanding contribution, dedication and selfless service towards environmental awareness, cleanliness drives, civic responsibility and creating a positive impact in society.
+</p>
 
-    <div class="sub-title">
-        OF APPRECIATION
-    </div>
+</div>
 
-    <div class="content">
+<div class="motto">
+🌱 ONE STEP TODAY, A GREENER TOMORROW 🌱
+</div>
 
-        <p>
-            This certificate is proudly presented to
-        </p>
+<img src="badge.png.png" class="badge">
 
-        <div id="volunteerName">
-            Volunteer Name
-        </div>
+<div class="footer">
 
-        <p>
-            for outstanding contribution, dedication and selfless service towards environmental awareness, cleanliness drives, civic responsibility and creating a positive impact in society.
-        </p>
+<div class="date">
 
-    </div>
+25 May 2026 <br><br>
 
-    <div class="motto">
-        🌱 ONE STEP TODAY, A GREENER TOMORROW 🌱
-    </div>
+Date
 
-    <!-- BADGE -->
+</div>
 
-    <img src="badge.png.png" class="badge">
+<div class="signature">
 
-    <!-- FOOTER -->
+<h2>Dhananjay</h2>
 
-    <div class="footer">
+<p>
+Founder <br>
+Green Civic Mission
+</p>
 
-        <div class="date">
+</div>
 
-            25 May 2026 <br><br>
+<div>
 
-            Date
+<img src="qr.jpeg.jpeg" class="qr">
 
-        </div>
+</div>
 
-        <div class="signature">
-
-            <h2>DK Prajapati</h2>
-
-            <p>
-                Founder <br>
-                Green Civic Mission
-            </p>
-
-        </div>
-
-        <div>
-
-            <img src="qr.jpeg.jpeg" class="qr">
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
 <script>
 
-    const params = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
-    const name = params.get("name");
+const name = params.get("name");
 
-    if(name){
+if(name){
 
-        document.getElementById("volunteerName").innerHTML = name;
+document.getElementById("volunteerName").innerHTML = name;
 
-    }
+}
 
 </script>
 
