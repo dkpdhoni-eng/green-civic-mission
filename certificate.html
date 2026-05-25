@@ -48,7 +48,7 @@
         This certificate is proudly presented to
     </p>
 
-    <h2>Volunteer Name</h2>
+    <h2 id="volunteerName">Volunteer Name</h2>
 
     <p>
         for contributing towards environmental awareness and civic responsibility with
@@ -57,7 +57,19 @@
     <h2>Green Civic Mission 🌱</h2>
 
 </div>
+<script>
 
+    const params = new URLSearchParams(window.location.search);
+
+    const name = params.get("name");
+
+    if(name){
+
+        document.getElementById("volunteerName").innerHTML = name;
+
+    }
+
+</script>
 </body>
 
 </html>
