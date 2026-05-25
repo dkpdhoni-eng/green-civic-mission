@@ -24,7 +24,9 @@
 
 body{
 
-    background:linear-gradient(135deg,#dff1dc,#edf8eb);
+    background:linear-gradient(135deg,#dff5df,#eefbea);
+
+    padding:40px;
 
     display:flex;
 
@@ -33,8 +35,6 @@ body{
     align-items:center;
 
     min-height:100vh;
-
-    padding:30px;
 
     font-family:'Poppins',sans-serif;
 
@@ -46,21 +46,21 @@ body{
 
     position:relative;
 
-    width:1123px;
+    width:1200px;
 
-    height:794px;
-
-    background:#fff;
-
-    overflow:hidden;
+    background:white;
 
     border:12px solid #caa520;
 
-    border-radius:20px;
+    border-radius:25px;
+
+    overflow:hidden;
 
     box-shadow:
-    0 0 35px rgba(0,0,0,0.18),
+    0 0 35px rgba(0,0,0,0.2),
     inset 0 0 40px rgba(202,165,32,0.08);
+
+    padding:50px 60px 40px;
 
 }
 
@@ -77,13 +77,13 @@ body{
     right:18px;
     bottom:18px;
 
-    border:2px solid rgba(202,165,32,0.5);
+    border:2px solid rgba(202,165,32,0.45);
 
-    border-radius:12px;
+    border-radius:16px;
 
 }
 
-/* TOP LEFT DESIGN */
+/* DECORATIVE SHAPES */
 
 .top-design{
 
@@ -92,18 +92,16 @@ body{
     top:-180px;
     left:-180px;
 
-    width:520px;
-    height:520px;
+    width:500px;
+    height:500px;
 
-    background:linear-gradient(135deg,#0a5c1a,#1c9f38);
+    background:linear-gradient(135deg,#0b5d1e,#20a83d);
 
     border-radius:50%;
 
-    opacity:0.96;
+    opacity:0.95;
 
 }
-
-/* BOTTOM RIGHT DESIGN */
 
 .bottom-design{
 
@@ -112,14 +110,14 @@ body{
     bottom:-220px;
     right:-220px;
 
-    width:520px;
-    height:520px;
+    width:550px;
+    height:550px;
 
-    background:linear-gradient(135deg,#1c9f38,#0a5c1a);
+    background:linear-gradient(135deg,#20a83d,#0b5d1e);
 
     border-radius:50%;
 
-    opacity:0.96;
+    opacity:0.95;
 
 }
 
@@ -129,12 +127,12 @@ body{
 
     position:absolute;
 
-    left:10px;
+    left:0;
     bottom:40px;
 
     width:320px;
 
-    opacity:0.16;
+    opacity:0.13;
 
 }
 
@@ -142,28 +140,29 @@ body{
 
     position:absolute;
 
-    right:70px;
-    top:320px;
+    right:50px;
+    top:340px;
 
     width:250px;
 
-    opacity:0.15;
+    opacity:0.14;
 
 }
 
-/* LOGO */
+/* WATERMARK */
 
-.logo{
+.watermark{
 
-    width:100px;
+    position:absolute;
 
-    display:block;
+    top:260px;
+    left:50%;
 
-    margin:35px auto 0;
+    transform:translateX(-50%);
 
-    position:relative;
+    font-size:170px;
 
-    z-index:2;
+    color:rgba(11,93,30,0.05);
 
 }
 
@@ -184,37 +183,53 @@ body{
 
 .cert-id h3{
 
-    font-size:18px;
-
     color:#333;
+
+    font-size:18px;
 
 }
 
 .cert-id p{
 
-    font-size:30px;
-
     color:#0b5d1e;
+
+    font-size:32px;
 
     font-weight:700;
 
 }
 
-/* ORGANIZATION */
+/* LOGO */
+
+.logo{
+
+    width:100px;
+
+    display:block;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ORG NAME */
 
 .org{
 
     text-align:center;
 
-    margin-top:12px;
+    color:#0b5d1e;
 
-    font-size:54px;
+    font-size:56px;
 
     font-weight:700;
 
-    color:#0b5d1e;
-
     letter-spacing:2px;
+
+    margin-top:10px;
 
     position:relative;
 
@@ -226,13 +241,13 @@ body{
 
     text-align:center;
 
-    margin-top:8px;
+    color:#555;
 
     font-size:16px;
 
     letter-spacing:4px;
 
-    color:#555;
+    margin-top:8px;
 
     position:relative;
 
@@ -246,15 +261,15 @@ body{
 
     text-align:center;
 
-    margin-top:28px;
-
-    font-size:88px;
-
     font-family:'Cinzel',serif;
+
+    font-size:90px;
 
     color:#0a4f19;
 
-    letter-spacing:7px;
+    margin-top:25px;
+
+    letter-spacing:8px;
 
     position:relative;
 
@@ -266,15 +281,15 @@ body{
 
     text-align:center;
 
-    margin-top:-8px;
+    font-family:'Cinzel',serif;
 
     font-size:30px;
 
-    font-family:'Cinzel',serif;
+    color:#caa520;
 
     letter-spacing:10px;
 
-    color:#caa520;
+    margin-top:-8px;
 
     position:relative;
 
@@ -290,7 +305,7 @@ body{
 
     margin-top:20px;
 
-    padding:0 120px;
+    padding:0 110px;
 
     position:relative;
 
@@ -306,15 +321,17 @@ body{
 
 }
 
-/* NAME */
+/* VOLUNTEER NAME */
 
 #volunteerName{
 
-    margin-top:20px;
+    margin-top:18px;
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 
-    font-size:76px;
+    display:inline-block;
+
+    font-size:78px;
 
     font-family:'Great Vibes',cursive;
 
@@ -322,23 +339,19 @@ body{
 
     border-bottom:3px solid #caa520;
 
-    display:inline-block;
-
     padding:0 40px 10px;
 
-    text-shadow:2px 2px 8px rgba(0,0,0,0.1);
+    text-shadow:2px 2px 10px rgba(0,0,0,0.1);
 
 }
 
 .description{
 
-    font-size:19px;
+    font-size:20px;
 
     color:#333;
 
     line-height:1.8;
-
-    margin-top:10px;
 
 }
 
@@ -348,9 +361,9 @@ body{
 
     text-align:center;
 
-    margin-top:28px;
+    margin-top:25px;
 
-    font-size:24px;
+    font-size:25px;
 
     font-weight:600;
 
@@ -368,11 +381,11 @@ body{
 
 .badge{
 
-    width:135px;
+    width:145px;
 
     display:block;
 
-    margin:18px auto;
+    margin:22px auto;
 
     position:relative;
 
@@ -386,21 +399,15 @@ body{
 
 .footer{
 
-    width:100%;
-
-    padding:0 60px;
-
-    position:absolute;
-
-    bottom:35px;
-
-    left:0;
+    margin-top:25px;
 
     display:flex;
 
     justify-content:space-between;
 
     align-items:flex-end;
+
+    position:relative;
 
     z-index:2;
 
@@ -416,7 +423,7 @@ body{
 
 .qr{
 
-    width:90px;
+    width:95px;
 
     border:5px solid white;
 
@@ -440,9 +447,9 @@ body{
 
     text-align:center;
 
-    color:#333;
-
     font-size:18px;
+
+    color:#333;
 
 }
 
@@ -456,7 +463,7 @@ body{
 
 .signature h2{
 
-    font-size:52px;
+    font-size:54px;
 
     font-family:'Great Vibes',cursive;
 
@@ -468,40 +475,19 @@ body{
 
     font-size:18px;
 
-    color:#333;
-
     line-height:1.6;
 
-}
-
-/* WATERMARK */
-
-.watermark{
-
-    position:absolute;
-
-    top:260px;
-    left:50%;
-
-    transform:translateX(-50%);
-
-    font-size:170px;
-
-    color:rgba(11,93,30,0.05);
-
-    z-index:1;
+    color:#333;
 
 }
 
 /* MOBILE */
 
-@media(max-width:1200px){
+@media(max-width:1300px){
 
 .certificate{
 
-    transform:scale(0.75);
-
-    transform-origin:top center;
+    width:100%;
 
 }
 
@@ -515,7 +501,7 @@ body{
 
 <div class="certificate">
 
-<!-- DESIGNS -->
+<!-- DECOR -->
 
 <div class="top-design"></div>
 
@@ -529,9 +515,9 @@ body{
 
 <!-- BACKGROUND IMAGES -->
 
-<img src="planting.jpeg.jpeg" class="planting">
+<img src="planting.jpeg" class="planting">
 
-<img src="earth.jpeg.jpeg" class="earth">
+<img src="earth.jpeg" class="earth">
 
 <!-- CERTIFICATE ID -->
 
@@ -545,9 +531,9 @@ body{
 
 <!-- LOGO -->
 
-<img src="logo.png.png" class="logo">
+<img src="logo.png" class="logo">
 
-<!-- ORG NAME -->
+<!-- ORG -->
 
 <div class="org">
 GREEN CIVIC MISSION
@@ -593,7 +579,7 @@ for outstanding contribution, dedication and selfless service towards environmen
 
 <!-- BADGE -->
 
-<img src="badge.png.png" class="badge">
+<img src="badge.png" class="badge">
 
 <!-- FOOTER -->
 
@@ -601,6 +587,7 @@ for outstanding contribution, dedication and selfless service towards environmen
 
 <div class="qr-box">
 
+<img src="qr.jpeg" class="qr">
 
 <div class="verify">
 Scan to verify
@@ -618,7 +605,7 @@ DATE
 
 <div class="signature">
 
-<h2>DK Prajapati</h2>
+<h2>Dhananjay</h2>
 
 <p>
 Founder <br>
