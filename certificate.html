@@ -6,78 +6,153 @@
 
     <title>Green Civic Mission Certificate</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
-
     <style>
 
         body{
             margin:0;
-            padding:0;
-            background:#dff5df;
-            font-family:'Poppins', sans-serif;
+            padding:40px;
+            background:#eaf7ea;
+            font-family:Georgia, serif;
         }
 
         .certificate{
 
-            width:85%;
-            margin:40px auto;
-            padding:60px;
-            background:white;
-            border:15px solid #0f6b2f;
-            border-radius:25px;
-            text-align:center;
             position:relative;
+            max-width:1200px;
+            margin:auto;
+            background:white;
+            padding:60px;
+            border:12px solid #b8860b;
             overflow:hidden;
-            box-shadow:0px 0px 30px rgba(0,0,0,0.3);
+            box-shadow:0px 0px 25px rgba(0,0,0,0.3);
 
         }
 
-        /* FADED BACKGROUND */
+        /* BACKGROUND IMAGES */
 
-        .certificate::before{
-
-            content:"🌍 🌱 ♻ 🌿";
+        .bg-tree{
 
             position:absolute;
-            top:35%;
-            left:10%;
-            font-size:150px;
-            opacity:0.05;
-            transform:rotate(-15deg);
+            left:0;
+            bottom:0;
+            width:320px;
+            opacity:0.12;
 
         }
+
+        .bg-earth{
+
+            position:absolute;
+            right:20px;
+            top:220px;
+            width:300px;
+            opacity:0.12;
+
+        }
+
+        /* CORNER DESIGN */
+
+        .corner-top-left{
+
+            position:absolute;
+            top:0;
+            left:0;
+            width:250px;
+            height:250px;
+            background:linear-gradient(135deg,#006400,#32cd32);
+            border-bottom-right-radius:100%;
+
+        }
+
+        .corner-bottom-right{
+
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:250px;
+            height:250px;
+            background:linear-gradient(135deg,#32cd32,#006400);
+            border-top-left-radius:100%;
+
+        }
+
+        /* LOGO */
 
         .logo{
 
             width:120px;
-            height:120px;
-            border-radius:50%;
-            margin-bottom:20px;
-            border:5px solid #0f6b2f;
+            display:block;
+            margin:auto;
+            position:relative;
+            z-index:2;
 
         }
 
-        h1{
+        /* TITLE */
 
-            font-family:'Cinzel', serif;
-            color:#0f6b2f;
+        .org-name{
+
+            text-align:center;
             font-size:52px;
-            margin-bottom:10px;
+            color:#0b5d1e;
+            font-weight:bold;
+            margin-top:15px;
+            position:relative;
+            z-index:2;
+
+        }
+
+        .tagline{
+
+            text-align:center;
+            font-size:18px;
             letter-spacing:2px;
+            color:#444;
+            margin-bottom:30px;
+            position:relative;
+            z-index:2;
 
         }
 
-        .subtitle{
+        .certificate-title{
 
-            color:#666;
-            font-size:22px;
-            margin-bottom:40px;
+            text-align:center;
+            font-size:95px;
+            color:#0b5d1e;
+            font-weight:bold;
+            letter-spacing:5px;
+            margin-top:10px;
+            position:relative;
+            z-index:2;
 
         }
 
-        p{
+        .sub-title{
 
-            font-size:24px;
+            text-align:center;
+            font-size:38px;
+            color:#b8860b;
+            letter-spacing:8px;
+            margin-top:-20px;
+            position:relative;
+            z-index:2;
+
+        }
+
+        /* CONTENT */
+
+        .content{
+
+            text-align:center;
+            margin-top:50px;
+            position:relative;
+            z-index:2;
+
+        }
+
+        .content p{
+
+            font-size:28px;
             color:#333;
             line-height:1.8;
 
@@ -87,51 +162,90 @@
 
         #volunteerName{
 
-            font-family:'Great Vibes', cursive;
-            font-size:65px;
-            color:#0f6b2f;
+            font-size:90px;
+            color:#0b5d1e;
+            font-family:cursive;
             margin:30px 0;
+            border-bottom:3px solid #caa520;
+            display:inline-block;
+            padding-bottom:10px;
 
         }
 
-        .mission{
+        /* MOTTO */
 
+        .motto{
+
+            text-align:center;
             margin-top:40px;
-            font-size:32px;
+            font-size:30px;
+            color:#0b5d1e;
+            letter-spacing:3px;
             font-weight:bold;
-            color:#0f6b2f;
+            position:relative;
+            z-index:2;
 
         }
 
-        .signature-section{
+        /* BADGE */
+
+        .badge{
+
+            width:180px;
+            display:block;
+            margin:40px auto;
+            position:relative;
+            z-index:2;
+
+        }
+
+        /* FOOTER */
+
+        .footer{
 
             display:flex;
             justify-content:space-between;
-            margin-top:80px;
+            align-items:center;
+            margin-top:50px;
+            position:relative;
+            z-index:2;
+
+        }
+
+        .date{
+
+            text-align:center;
+            font-size:24px;
 
         }
 
         .signature{
 
             text-align:center;
-            width:40%;
 
         }
 
-        .line{
+        .signature h2{
 
-            width:100%;
-            height:2px;
-            background:black;
-            margin-bottom:10px;
+            font-family:cursive;
+            font-size:45px;
+            margin:0;
+            color:#111;
 
         }
 
-        .footer{
+        .signature p{
 
-            margin-top:40px;
-            font-size:18px;
-            color:#666;
+            font-size:22px;
+            color:#333;
+
+        }
+
+        /* QR */
+
+        .qr{
+
+            width:120px;
 
         }
 
@@ -143,52 +257,91 @@
 
 <div class="certificate">
 
-    <img src="logo.png.png" class="logo">
+    <!-- DESIGNS -->
 
-    <h1>Certificate of Appreciation</h1>
+    <div class="corner-top-left"></div>
 
-    <div class="subtitle">
-        Presented For Outstanding Environmental Contribution
+    <div class="corner-bottom-right"></div>
+
+    <!-- BACKGROUND -->
+
+    <img src="planting.png" class="bg-tree">
+
+    <img src="earth.png" class="bg-earth">
+
+    <!-- LOGO -->
+
+    <img src="logo.png" class="logo">
+
+    <div class="org-name">
+        GREEN CIVIC MISSION
     </div>
 
-    <p>
-        This prestigious certificate is proudly awarded to
-    </p>
-
-    <div id="volunteerName">
-        Volunteer Name
+    <div class="tagline">
+        TOGETHER FOR A CLEANER & GREENER TOMORROW
     </div>
 
-    <p>
-        for remarkable dedication towards environmental awareness, cleanliness drives, civic responsibility, and creating a greener & better society with
-    </p>
-
-    <div class="mission">
-        Green Civic Mission 🌱
+    <div class="certificate-title">
+        CERTIFICATE
     </div>
 
-    <div class="signature-section">
+    <div class="sub-title">
+        OF APPRECIATION
+    </div>
 
-        <div class="signature">
+    <div class="content">
 
-            <div class="line"></div>
+        <p>
+            This certificate is proudly presented to
+        </p>
 
-            Founder
-
+        <div id="volunteerName">
+            Volunteer Name
         </div>
 
-        <div class="signature">
-
-            <div class="line"></div>
-
-            Authorized Signature
-
-        </div>
+        <p>
+            for outstanding contribution, dedication and selfless service towards environmental awareness, cleanliness drives, civic responsibility and creating a positive impact in society.
+        </p>
 
     </div>
+
+    <div class="motto">
+        🌱 ONE STEP TODAY, A GREENER TOMORROW 🌱
+    </div>
+
+    <!-- BADGE -->
+
+    <img src="badge.png" class="badge">
+
+    <!-- FOOTER -->
 
     <div class="footer">
-        Together For A Cleaner & Greener Tomorrow 🌍
+
+        <div class="date">
+
+            25 May 2026 <br><br>
+
+            Date
+
+        </div>
+
+        <div class="signature">
+
+            <h2>Dhananjay</h2>
+
+            <p>
+                Founder <br>
+                Green Civic Mission
+            </p>
+
+        </div>
+
+        <div>
+
+            <img src="qr.jpeg" class="qr">
+
+        </div>
+
     </div>
 
 </div>
