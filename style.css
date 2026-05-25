@@ -192,4 +192,51 @@ textarea{
 
 .donation h2{
     color:green;
+}/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        padding:0;
+        gap:10px;
+        margin-top:15px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        margin:20px;
+        padding:20px;
+    }
+
+    .gallery img{
+        width:100%;
+        height:auto;
+    }
+
+    button{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .donation img{
+        width:200px;
+    }
+
+    .founder p{
+        font-size:16px;
+    }
+
 }
