@@ -274,15 +274,15 @@ nav{
 }
 
 .logo img{
-    width:60px;
-    height:60px;
+    width:55px;
+    height:55px;
     object-fit:cover;
     border-radius:50%;
 }
 
 .logo h1{
     color:white;
-    font-size:32px;
+    font-size:28px;
     margin:0;
 }
 
