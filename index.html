@@ -1,220 +1,347 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
 
-    <title>Green Civic Mission</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Civic Mission</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-/* LOADER */
 
-window.addEventListener("load", function(){
+<!-- =========================
+     NAVBAR
+========================= -->
 
-    document.getElementById("loader").style.display = "none";
+<nav>
 
-});
-    <!-- NAVBAR -->
+<div class="logo">
 
-    <nav>
+<img src="logo.png">
 
-        <div class="logo">
-
-    <img src="logo.png.png" alt="Logo">
-
-    <h1>Green Civic Mission</h1>
+<h1>Green Civic Mission</h1>
 
 </div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<ul>
 
-    </nav>
+<li><a href="#home">Home</a></li>
 
+<li><a href="#about">About</a></li>
 
-    <!-- HERO SECTION -->
+<li><a href="#stats">Impact</a></li>
 
-    <div class="hero" id="home">
+<li><a href="#gallery">Gallery</a></li>
 
-        <h2>Save Environment Save Future 🌍</h2>
+<li><a href="#donate">Donate</a></li>
 
-        <p>
-            Join us to protect nature and create a greener world.
-        </p>
+<li><a href="#join">Join</a></li>
 
-        <button onclick="joinNow()">
-    Join Our Mission
+</ul>
+
+</nav>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h2>
+SAVE EARTH BEFORE IT'S TOO LATE 🌍
+</h2>
+
+<p>
+
+Green Civic Mission is an environmental movement dedicated to spreading awareness about cleanliness, tree plantation, civic responsibility and creating a greener tomorrow for future generations.
+
+</p>
+
+<a href="#join">
+
+<button>
+Join The Mission 🌱
 </button>
 
-<button onclick="darkMode()" id="darkBtn">
-    Dark Mode
+</a>
+
+</div>
+
+</section>
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<h2>
+About Green Civic Mission
+</h2>
+
+<p style="text-align:center; line-height:2; font-size:20px;">
+
+Greetings. Today, our country is grappling with a truly grave crisis — climate change. Countless people, animals and birds are suffering because of environmental destruction. Green Civic Mission was started with the aim of spreading environmental awareness, encouraging tree plantation, improving civic sense and building a cleaner and greener society. Our mission is not just to work alone, but to inspire everyone to join this movement and become responsible citizens.
+
+</p>
+
+</section>
+
+<!-- =========================
+     COUNTERS
+========================= -->
+
+<section id="stats">
+
+<h2>
+Our Impact 🚀
+</h2>
+
+<div class="counter-container">
+
+<div class="counter-box">
+
+<h1 id="tree-count">
+1200+
+</h1>
+
+<p>
+Trees Planted
+</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1 id="drive-count">
+75+
+</h1>
+
+<p>
+Cleanliness Drives
+</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1 id="volunteer-count">
+350+
+</h1>
+
+<p>
+Joined Volunteers
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section>
+
+<h2>
+Our Projects 🌱
+</h2>
+
+<div class="counter-container">
+
+<div class="counter-box">
+
+<p>
+
+🌳 Tree Plantation Drives
+
+</p>
+
+</div>
+
+<div class="counter-box">
+
+<p>
+
+🧹 Public Cleanliness Awareness
+
+</p>
+
+</div>
+
+<div class="counter-box">
+
+<p>
+
+🌍 Environmental Awareness Campaigns
+
+</p>
+
+</div>
+
+<div class="counter-box">
+
+<p>
+
+👥 Making Responsible Citizens
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery">
+
+<h2>
+Mission Gallery 📸
+</h2>
+
+<div class="gallery">
+
+<img src="gallery1.jpeg">
+
+<img src="gallery2.jpeg">
+
+<img src="gallery3.jpeg">
+
+<img src="gallery4.jpeg">
+
+<img src="gallery5.jpeg">
+
+<img src="gallery6.jpeg">
+
+</div>
+
+</section>
+
+<!-- =========================
+     DONATION
+========================= -->
+
+<section class="donation" id="donate">
+
+<h2>
+Support Our Mission 💚
+</h2>
+
+<p style="font-size:20px;">
+
+Your contribution helps us organize awareness campaigns, cleanliness drives and tree plantation programs.
+
+</p>
+
+<div class="progress-bar">
+
+<div class="progress"></div>
+
+</div>
+
+<h3>
+Goal: ₹50,000
+</h3>
+
+<br>
+
+<img src="qr.jpeg" width="250">
+
+</section>
+
+<!-- =========================
+     JOIN FORM
+========================= -->
+
+<section id="join">
+
+<h2>
+Join Our Mission 🌱
+</h2>
+
+<form action="https://formspree.io/f/xzdwaekr" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="text" name="city" placeholder="Your City">
+
+<textarea name="message" rows="5" placeholder="Why do you want to join Green Civic Mission?"></textarea>
+
+<button type="submit">
+Join Now 🚀
 </button>
 
-    </div>
-
-
-    <!-- ABOUT SECTION -->
-
-    <section id="about">
-
-        <h2>About Us</h2>
-
-        <p>
-            We work for tree plantation, river cleaning and spreading awareness.
-        </p>
-
-    </section>
-
-
-   <section id="missions">
-
-    <h2>Our Mission</h2>
-
-    <ul>
-
-        <li>🌱 Tree Plantation Drives</li>
-
-        <li>🧹 Cleanliness Awareness Campaigns</li>
-
-        <li>♻ Plastic Free Environment Awareness</li>
-
-        <li>🌍 Social Awareness About Environment</li>
-
-        <li>🏙 Making Society Cleaner & Greener</li>
-
-        <li>🤝 Encouraging Civic Sense</li>
-
-        <li>👨‍👩‍👧 Inspiring Responsible Citizens</li>
-
-        <li>🚮 Public Cleanliness Initiatives</li>
-
-        <li>📢 Spreading Environmental Education</li>
-
-    </ul><section>
-
-    <h2>Our Volunteers</h2>
-
-    <h1 id="counter">0</h1>
-
-    <p>People Joined Green Civic Mission 🌱</p>
+</form>
 
 </section>
-<!-- FOUNDER MESSAGE -->
 
-<section class="founder">
+<!-- =========================
+     FOUNDER MESSAGE
+========================= -->
 
-    <h2>Founder’s Message</h2>
+<section>
 
-    <p>
-        Greetings.<br><br>
+<h2>
+Founder’s Message 🌍
+</h2>
 
-        Today, our country is grappling with a truly dire and grave crisis — the crisis of climate change.<br><br>
+<p style="line-height:2; font-size:20px; text-align:center;">
 
-        Countless people across the globe are losing their lives because of it, and innumerable animals and birds are falling victim to its effects. The situation has become such that you and I can barely step out of our homes during the summer heat. Other species of living beings are facing extinction.<br><br>
+Today, our planet is facing the severe crisis of climate change. People across the world are suffering, animals are disappearing and environmental destruction is increasing rapidly. We cannot simply stand and watch this happen. Green Civic Mission was created to inspire people to take action — plant trees, keep surroundings clean and become responsible citizens. Together, we can create a cleaner, greener and safer future.
 
-        Should we simply stand by and let this happen?<br><br>
-
-        No — absolutely not; we will not let this continue. We will put a stop to it, for as long as this Earth needs us.<br><br>
-
-        My objective is not to undertake this task alone, but rather to raise awareness among all of you and enlist your support in this mission of mine.<br><br>
-
-        So, join our mission and help save our society — and our planet — from destruction.
-    </p>
-<h3>- Founder, Green Civic Mission</h3>
-</section>
-</section>
-<!-- DONATION SECTION -->
-
-<section class="donation">
-
-    <h2>Support Our Mission 💚</h2>
-
-    <p>
-        Your small contribution can help us plant trees, spread awareness, and make society cleaner & greener.
-    </p>
-
-    <img src="qr.jpeg.jpeg" alt="Donation QR">
-
-   
-
-    <p>Scan the QR code to donate.</p>
+</p>
 
 </section>
-    <!-- FOOTER -->
 
-    <footer>
+<!-- =========================
+     FOOTER
+========================= -->
 
-        © 2026 Green Civic Mission
+<footer>
 
-    </footer>
+<h2>
+Green Civic Mission 🌱
+</h2>
 
+<p>
+Together For A Cleaner & Greener Tomorrow
+</p>
 
-    <script src="script.js"></script>
+<p>
+© 2026 Green Civic Mission. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- =========================
+     WHATSAPP BUTTON
+========================= -->
+
+<a href="https://wa.me/91YOURNUMBER" class="whatsapp">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+</a>
 
 </body>
 
 </html>
-<!-- GALLERY -->
-
-<section>
-
-    <h2>Our Gallery</h2>
-
-    <div class="gallery">
-
-        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09">
-
-        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469">
-
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
-
-    </div>
-
-</section>
-
-
-
-<!-- CONTACT FORM -->
-
-<<!-- CONTACT FORM -->
-
-<section id="contact">
-
-    <h2>Join Our Mission</h2>
-
-    <form action="https://formspree.io/f/xzdwaekr" method="POST">
-
-        <input 
-            type="text" 
-            name="name" 
-            placeholder="Enter Your Name"
-            required
-        >
-
-        <input 
-            type="email" 
-            name="email" 
-            placeholder="Enter Your Email"
-            required
-        >
-
-        <textarea 
-            name="message" 
-            placeholder="Why do you want to join Green Civic Mission?"
-            required
-        ></textarea>
-
-        <button type="submit">
-            Join Now
-        </button>
-
-    </form>
-
-</section>
