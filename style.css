@@ -613,4 +613,97 @@ section{
 
     font-weight:600;
 
+}/* =========================
+   DARK MODE BUTTON
+========================= */
+
+#darkModeBtn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    z-index:9999;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode{
+
+    background:#0b0b0b;
+
+    color:white;
+
+}
+
+.dark-mode nav{
+
+    background:rgba(0,0,0,0.9);
+
+}
+
+.dark-mode section{
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+
+}
+
+.dark-mode h2,
+.dark-mode h1,
+.dark-mode p{
+
+    color:white;
+
+}
+
+.dark-mode .counter-box{
+
+    background:#14532d;
+
+}
+
+.dark-mode footer{
+
+    background:black;
+
+}
+
+.dark-mode form input,
+.dark-mode form textarea{
+
+    background:#222;
+
+    color:white;
+
+}
+
+.dark-mode .founder-box{
+
+    background:rgba(255,255,255,0.08);
+
 }
