@@ -6,67 +6,133 @@
 
     <title>Green Civic Mission Certificate</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
     <style>
 
         body{
             margin:0;
             padding:0;
-            background:#e8ffe8;
-            font-family:Arial;
+            background:#dff5df;
+            font-family:'Poppins', sans-serif;
         }
 
         .certificate{
-            width:80%;
-            margin:50px auto;
+
+            width:85%;
+            margin:40px auto;
+            padding:60px;
             background:white;
-            padding:50px;
-            border:15px solid green;
-            border-radius:20px;
+            border:15px solid #0f6b2f;
+            border-radius:25px;
             text-align:center;
-            box-shadow:0px 0px 20px gray;
+            position:relative;
+            overflow:hidden;
+            box-shadow:0px 0px 30px rgba(0,0,0,0.3);
+
+        }
+
+        /* FADED BACKGROUND */
+
+        .certificate::before{
+
+            content:"🌍 🌱 ♻ 🌿";
+
+            position:absolute;
+            top:35%;
+            left:10%;
+            font-size:150px;
+            opacity:0.05;
+            transform:rotate(-15deg);
+
         }
 
         .logo{
+
             width:120px;
+            height:120px;
+            border-radius:50%;
             margin-bottom:20px;
+            border:5px solid #0f6b2f;
+
         }
 
         h1{
-            color:green;
-            font-size:50px;
+
+            font-family:'Cinzel', serif;
+            color:#0f6b2f;
+            font-size:52px;
             margin-bottom:10px;
+            letter-spacing:2px;
+
         }
 
-        h2{
-            color:#222;
-            font-size:35px;
-            margin:20px 0;
+        .subtitle{
+
+            color:#666;
+            font-size:22px;
+            margin-bottom:40px;
+
         }
 
         p{
+
             font-size:24px;
-            line-height:1.7;
             color:#333;
+            line-height:1.8;
+
+        }
+
+        /* VOLUNTEER NAME */
+
+        #volunteerName{
+
+            font-family:'Great Vibes', cursive;
+            font-size:65px;
+            color:#0f6b2f;
+            margin:30px 0;
+
         }
 
         .mission{
-            color:green;
+
+            margin-top:40px;
+            font-size:32px;
             font-weight:bold;
-            font-size:30px;
-            margin-top:30px;
+            color:#0f6b2f;
+
+        }
+
+        .signature-section{
+
+            display:flex;
+            justify-content:space-between;
+            margin-top:80px;
+
         }
 
         .signature{
-            margin-top:60px;
-            text-align:right;
-            font-size:22px;
-            color:#444;
+
+            text-align:center;
+            width:40%;
+
+        }
+
+        .line{
+
+            width:100%;
+            height:2px;
+            background:black;
+            margin-bottom:10px;
+
         }
 
         .footer{
+
             margin-top:40px;
-            color:gray;
             font-size:18px;
+            color:#666;
+
         }
 
     </style>
@@ -81,27 +147,48 @@
 
     <h1>Certificate of Appreciation</h1>
 
+    <div class="subtitle">
+        Presented For Outstanding Environmental Contribution
+    </div>
+
     <p>
-        This certificate is proudly presented to
+        This prestigious certificate is proudly awarded to
     </p>
 
-    <h2 id="volunteerName">Volunteer Name</h2>
+    <div id="volunteerName">
+        Volunteer Name
+    </div>
 
     <p>
-        for outstanding contribution towards environmental awareness, cleanliness drives, civic responsibility, and making society greener & better.
+        for remarkable dedication towards environmental awareness, cleanliness drives, civic responsibility, and creating a greener & better society with
     </p>
 
     <div class="mission">
         Green Civic Mission 🌱
     </div>
 
-    <div class="signature">
-        Founder <br>
-        Green Civic Mission
+    <div class="signature-section">
+
+        <div class="signature">
+
+            <div class="line"></div>
+
+            Founder
+
+        </div>
+
+        <div class="signature">
+
+            <div class="line"></div>
+
+            Authorized Signature
+
+        </div>
+
     </div>
 
     <div class="footer">
-        Together For A Cleaner & Greener Tomorrow
+        Together For A Cleaner & Greener Tomorrow 🌍
     </div>
 
 </div>
