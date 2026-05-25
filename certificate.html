@@ -628,15 +628,24 @@ document.getElementById("volunteerName").innerHTML = name;
 }
 
 </script>
+
 <script>
 
 const params = new URLSearchParams(window.location.search);
 
 const name = params.get("name");
 
+const id = params.get("id");
+
 if(name){
 
 document.getElementById("volunteerName").innerHTML = name;
+
+}
+
+if(id){
+
+document.getElementById("certificateID").innerHTML = id;
 
 }
 
