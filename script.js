@@ -48,3 +48,14 @@ window.addEventListener("load", function(){
     document.getElementById("loader").style.display = "none";
 
 });
+/* =========================
+   DARK MODE
+========================= */
+
+const darkBtn = document.getElementById("darkModeBtn");
+
+darkBtn.onclick = function(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
