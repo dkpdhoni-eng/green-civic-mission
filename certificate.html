@@ -6,53 +6,110 @@
 
 <title>Green Civic Mission Certificate</title>
 
+<!-- PREMIUM FONTS -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
 
-    margin:0;
-    padding:40px;
     background:linear-gradient(135deg,#dff5df,#eefbea);
-    font-family:Georgia, serif;
+
+    padding:30px;
+
+    font-family:'Poppins',sans-serif;
 
 }
+
+/* MAIN CERTIFICATE */
 
 .certificate{
 
     position:relative;
-    max-width:1300px;
-    margin:auto;
-    background:rgba(255,255,255,0.92);
-    backdrop-filter:blur(5px);
 
-    border:14px solid #caa520;
+    max-width:1400px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,0.96);
+
+    overflow:hidden;
+
+    border:12px solid #caa520;
+
     border-radius:25px;
 
     padding:70px;
 
-    overflow:hidden;
-
     box-shadow:
-    0 0 30px rgba(0,0,0,0.25),
-    inset 0 0 40px rgba(255,215,0,0.15);
+    0 0 35px rgba(0,0,0,0.2),
+    inset 0 0 60px rgba(202,165,32,0.08);
 
 }
 
-/* GOLD LINES */
+/* INNER BORDER */
 
 .certificate::before{
 
     content:"";
 
     position:absolute;
-    top:20px;
-    left:20px;
-    right:20px;
-    bottom:20px;
 
-    border:2px solid rgba(202,165,32,0.5);
+    top:18px;
+    left:18px;
+    right:18px;
+    bottom:18px;
+
+    border:2px solid rgba(202,165,32,0.45);
 
     border-radius:18px;
+
+}
+
+/* TOP LEFT CURVE */
+
+.top-design{
+
+    position:absolute;
+
+    top:-100px;
+    left:-100px;
+
+    width:450px;
+    height:450px;
+
+    background:linear-gradient(135deg,#0a5c1a,#1f9b36);
+
+    border-radius:50%;
+
+    z-index:0;
+
+}
+
+/* BOTTOM RIGHT CURVE */
+
+.bottom-design{
+
+    position:absolute;
+
+    bottom:-120px;
+    right:-120px;
+
+    width:500px;
+    height:500px;
+
+    background:linear-gradient(135deg,#1f9b36,#0a5c1a);
+
+    border-radius:50%;
+
+    z-index:0;
 
 }
 
@@ -61,24 +118,30 @@ body{
 .planting{
 
     position:absolute;
-    left:-20px;
+
+    left:-30px;
     bottom:0;
 
-    width:420px;
+    width:450px;
 
-    opacity:0.15;
+    opacity:0.14;
+
+    z-index:1;
 
 }
 
 .earth{
 
     position:absolute;
+
     right:20px;
-    top:220px;
+    top:280px;
 
-    width:320px;
+    width:350px;
 
-    opacity:0.12;
+    opacity:0.14;
+
+    z-index:1;
 
 }
 
@@ -87,9 +150,13 @@ body{
 .logo{
 
     width:130px;
+
     display:block;
+
     margin:auto;
+
     position:relative;
+
     z-index:2;
 
 }
@@ -97,16 +164,21 @@ body{
 .org{
 
     text-align:center;
-    color:#0b5d1e;
 
-    font-size:56px;
-    font-weight:bold;
+    font-family:'Poppins',sans-serif;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    color:#0b5d1e;
 
     margin-top:10px;
 
     letter-spacing:2px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -114,15 +186,17 @@ body{
 .tagline{
 
     text-align:center;
-    font-size:18px;
 
     color:#444;
 
-    letter-spacing:3px;
+    font-size:18px;
+
+    letter-spacing:4px;
 
     margin-top:10px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -133,19 +207,22 @@ body{
 
     text-align:center;
 
-    font-size:110px;
+    font-family:'Cinzel',serif;
+
+    font-size:115px;
 
     color:#0a4f19;
 
     margin-top:40px;
 
-    font-weight:bold;
+    font-weight:700;
 
     letter-spacing:8px;
 
-    text-shadow:3px 3px 10px rgba(0,0,0,0.1);
+    text-shadow:3px 3px 10px rgba(0,0,0,0.08);
 
     position:relative;
+
     z-index:2;
 
 }
@@ -154,15 +231,18 @@ body{
 
     text-align:center;
 
+    font-family:'Cinzel',serif;
+
     font-size:40px;
 
     color:#caa520;
 
-    letter-spacing:10px;
+    letter-spacing:12px;
 
-    margin-top:-25px;
+    margin-top:-15px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -176,6 +256,7 @@ body{
     margin-top:50px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -190,25 +271,25 @@ body{
 
 }
 
-/* NAME */
+/* VOLUNTEER NAME */
 
 #volunteerName{
 
-    font-size:95px;
+    font-family:'Great Vibes',cursive;
+
+    font-size:105px;
 
     color:#0b5d1e;
 
-    font-family:cursive;
-
-    margin:40px 0;
-
-    text-shadow:2px 2px 10px rgba(0,0,0,0.15);
-
-    border-bottom:3px solid #caa520;
+    margin:35px 0;
 
     display:inline-block;
 
     padding:0 40px 15px;
+
+    border-bottom:3px solid #caa520;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,0.12);
 
 }
 
@@ -220,15 +301,16 @@ body{
 
     margin-top:40px;
 
+    font-size:34px;
+
+    font-weight:600;
+
     color:#0b5d1e;
-
-    font-size:32px;
-
-    font-weight:bold;
 
     letter-spacing:4px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -237,16 +319,17 @@ body{
 
 .badge{
 
-    width:190px;
+    width:210px;
 
     display:block;
 
-    margin:45px auto;
+    margin:50px auto;
 
     position:relative;
+
     z-index:2;
 
-    filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
+    filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.15));
 
 }
 
@@ -260,9 +343,10 @@ body{
 
     align-items:center;
 
-    margin-top:60px;
+    margin-top:50px;
 
     position:relative;
+
     z-index:2;
 
 }
@@ -285,11 +369,9 @@ body{
 
 .signature h2{
 
-    font-size:48px;
+    font-family:'Great Vibes',cursive;
 
-    font-family:cursive;
-
-    margin:0;
+    font-size:60px;
 
     color:#111;
 
@@ -311,7 +393,71 @@ body{
 
     border:5px solid white;
 
-    box-shadow:0px 0px 12px rgba(0,0,0,0.15);
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+}
+
+/* CERTIFICATE ID */
+
+.cert-id{
+
+    position:absolute;
+
+    top:70px;
+    right:90px;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.cert-id h3{
+
+    color:#333;
+
+    font-size:20px;
+
+}
+
+.cert-id p{
+
+    color:#0b5d1e;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.title{
+    font-size:70px;
+}
+
+.subtitle{
+    font-size:28px;
+}
+
+#volunteerName{
+    font-size:70px;
+}
+
+.org{
+    font-size:40px;
+}
+
+.content p{
+    font-size:22px;
+}
+
+.footer{
+    flex-direction:column;
+    gap:40px;
+}
 
 }
 
@@ -323,11 +469,33 @@ body{
 
 <div class="certificate">
 
+<!-- DESIGNS -->
+
+<div class="top-design"></div>
+
+<div class="bottom-design"></div>
+
+<!-- BACKGROUND IMAGES -->
+
 <img src="planting.jpeg.jpeg" class="planting">
 
 <img src="earth.jpeg.jpeg" class="earth">
 
+<!-- CERTIFICATE ID -->
+
+<div class="cert-id">
+
+<h3>CERTIFICATE ID</h3>
+
+<p>GCM2026/1025</p>
+
+</div>
+
+<!-- LOGO -->
+
 <img src="logo.png.png" class="logo">
+
+<!-- ORGANIZATION -->
 
 <div class="org">
 GREEN CIVIC MISSION
@@ -337,6 +505,8 @@ GREEN CIVIC MISSION
 TOGETHER FOR A CLEANER & GREENER TOMORROW
 </div>
 
+<!-- TITLE -->
+
 <div class="title">
 CERTIFICATE
 </div>
@@ -344,6 +514,8 @@ CERTIFICATE
 <div class="subtitle">
 OF APPRECIATION
 </div>
+
+<!-- CONTENT -->
 
 <div class="content">
 
@@ -361,11 +533,17 @@ for outstanding contribution, dedication and selfless service towards environmen
 
 </div>
 
+<!-- MOTTO -->
+
 <div class="motto">
 🌱 ONE STEP TODAY, A GREENER TOMORROW 🌱
 </div>
 
+<!-- BADGE -->
+
 <img src="badge.png.png" class="badge">
+
+<!-- FOOTER -->
 
 <div class="footer">
 
@@ -379,7 +557,7 @@ Date
 
 <div class="signature">
 
-<h2>Dhananjay</h2>
+<h2>DK Prajapati</h2>
 
 <p>
 Founder <br>
@@ -397,6 +575,8 @@ Green Civic Mission
 </div>
 
 </div>
+
+<!-- NAME SCRIPT -->
 
 <script>
 
