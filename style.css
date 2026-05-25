@@ -242,4 +242,16 @@ textarea{
         font-size:16px;
     }
 
+}/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
 }
