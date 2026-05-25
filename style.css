@@ -588,4 +588,24 @@ section{
 
     font-size:28px;
 
+}/* =========================
+   DONATION QR
+========================= */
+
+.donate-qr{
+
+    margin-top:25px;
+
+}
+
+.donate-qr p{
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    color:#0b5d1e;
+
+    font-weight:600;
+
 }
