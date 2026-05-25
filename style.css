@@ -8,16 +8,14 @@ body{
 }
 
 /* NAVBAR */
-
-   nav{
+nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 50px;
     background:black;
 }
-
-
+ 
 nav ul{
     display:flex;
     list-style:none;
