@@ -17,6 +17,9 @@
 </head>
 
 <body>
+     <button id="darkModeBtn">
+🌙
+</button>
 
 <!-- =========================
      NAVBAR
@@ -376,7 +379,17 @@ Together For A Cleaner & Greener Tomorrow
 </a>
      
 <script src="script.js"></script>
+<script>
 
+const darkBtn = document.getElementById("darkModeBtn");
+
+darkBtn.onclick = function(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+</script>
 </body>
 
 </html>
