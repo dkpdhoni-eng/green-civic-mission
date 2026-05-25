@@ -561,7 +561,7 @@ OF APPRECIATION
 This certificate is proudly presented to
 </div>
 
-<div id="Swati Prajapati">
+<div id="volunteerName">
 Volunteer Name
 </div>
 
@@ -633,7 +633,19 @@ document.getElementById("volunteerName").innerHTML = name;
 }
 
 </script>
+<script>
 
+const params = new URLSearchParams(window.location.search);
+
+const name = params.get("name");
+
+if(name){
+
+document.getElementById("volunteerName").innerHTML = name;
+
+}
+
+</script>
 </body>
 
 </html>
